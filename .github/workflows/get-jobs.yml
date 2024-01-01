@@ -35,7 +35,7 @@ jobs:
         run: |
           git config --local user.name ${{ secrets.GIT_USER_NAME }}
           git config --local user.email ${{ secrets.GIT_USER_EMAIL }}
-          git add README.md NEW_GRAD_INTL.md INTERN_USA.md INTERN_INTL.md
+          git add README.md INTERN_INTL.md NEW_GRAD_USA.md NEW_GRAD_INTL.md
           git diff --staged --exit-code || git commit -m "chore: get positions & update tables"
 
       - name: Push changes

@@ -13,19 +13,19 @@ const HEADERS = ["Company", "Position", "Location", "Posting", "Age"];
 const TABLES: Table[] = [
   {
     path: "../../../README.md",
-    query: "get_new_grad_usa",
-  },
-  {
-    path: "../../../NEW_GRAD_INTL.md",
-    query: "get_new_grad_intl",
-  },
-  {
-    path: "../../../INTERN_USA.md",
     query: "get_intern_usa",
   },
   {
     path: "../../../INTERN_INTL.md",
     query: "get_intern_intl",
+  },
+  {
+    path: "../../../NEW_GRAD_USA.md",
+    query: "get_new_grad_usa",
+  },
+  {
+    path: "../../../NEW_GRAD_INTL.md",
+    query: "get_new_grad_intl",
   },
 ];
 

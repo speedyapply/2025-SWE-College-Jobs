@@ -47,7 +47,7 @@ jobs:
         run: |
           git config --local user.name ${{ steps.add_or_update_job.outputs.git_user_name }}
           git config --local user.email ${{ steps.add_or_update_job.outputs.git_user_email }}
-          git add README.md NEW_GRAD_INTL.md INTERN_USA.md INTERN_INTL.md
+          git add README.md INTERN_INTL.md NEW_GRAD_USA.md NEW_GRAD_INTL.md
           git diff --staged --exit-code || git commit -m "${{ steps.add_or_update_job.outputs.commit_message }}"
 
       - name: Push changes

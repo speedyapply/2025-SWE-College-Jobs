@@ -1,0 +1,15 @@
+name: Repo Issue or Suggestion
+description: Tell us about an issue or feature request.
+title: "Other Issue"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us about an issue or feature request.
+        
+        We appreciate your input.
+  - type: textarea
+    attributes:
+      label: Issue or Feature Request
+    validations:
+      required: true

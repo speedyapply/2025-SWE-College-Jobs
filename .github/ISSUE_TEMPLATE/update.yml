@@ -1,0 +1,87 @@
+name: Update Position
+description: Update a new grad or intern job position.
+title: "Update Position"
+labels: ["update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Update SWE Position Form
+        
+        Copy and paste the posting/application link from the position you would like to update, so we know which position to edit. **ONLY** fill out the fields that you would to update for this position and leave the rest blank.
+
+        We appreciate your contribution.
+  - type: input
+    id: job_url
+    attributes:
+      label: Position Application Link
+      placeholder: e.g. https://company.com/posting
+    validations:
+      required: true
+  - type: input
+    id: job_title
+    attributes:
+      label: Position Title
+      placeholder: e.g. New Grad Software Engineer
+    validations:
+      required: false
+  - type: input
+    id: company_name
+    attributes:
+      label: Company Name
+      placeholder: e.g. Amazon
+    validations:
+      required: false
+  - type: input
+    id: company_url
+    attributes:
+      label: Company Link
+      placeholder: e.g. https://amazon.com
+    validations:
+      required: false
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      placeholder: e.g. San Franciso, CA
+    validations:
+      required: false
+  - type: dropdown
+    id: job_type
+    attributes:
+      label: Is this a new grad position or an internship?
+      multiple: false
+      options:
+        - New Grad
+        - Internship
+    validations:
+      required: false
+  - type: dropdown
+    id: usa
+    attributes:
+      label: Is this position based in the USA?
+      multiple: false
+      options:
+        - No, it's international.
+        - Yes, it's based in the USA.
+    validations:
+      required: false
+  - type: dropdown
+    id: status
+    attributes:
+      label: Is this position accepting applications?
+      multiple: false
+      options:
+        - No, it's closed.
+        - Yes, it's available.
+    validations:
+      required: false
+  - type: input
+    id: github
+    attributes:
+      label: Your GitHub Email
+      description: |
+        Include your GitHub email here if you would like the credit for this contribution when this job is updated.
+      placeholder: e.g. bot@speedyapply.com
+    validations:
+      required: false

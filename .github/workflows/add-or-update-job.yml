@@ -1,0 +1,72 @@
+name: Add or Update Job
+
+on:
+  issues:
+    types: ["labeled"]
+
+jobs:
+  update-or-add-job:
+    runs-on: ubuntu-latest
+    if: github.event.label.name == 'approved'
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: .github/scripts
+
+      - name: Update or Add Job
+        run: npm run add-or-update-job
+        id: add_or_update_job
+        working-directory: .github/scripts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          GIT_USER_NAME: ${{ secrets.GIT_USER_NAME }}
+          GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
+
+      - name: Get Jobs and Update Tables
+        if: success()
+        run: npm run get-jobs
+        working-directory: .github/scripts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          APPLY_IMG_URL: ${{ secrets.APPLY_IMG_URL }}
+
+      - name: Commit Markdown changes
+        if: success()
+        run: |
+          git config --local user.name ${{ steps.add_or_update_job.outputs.git_user_name }}
+          git config --local user.email ${{ steps.add_or_update_job.outputs.git_user_email }}
+          git add README.md NEW_GRAD_INTL.md INTERN_USA.md INTERN_INTL.md
+          git diff --staged --exit-code || git commit -m "${{ steps.add_or_update_job.outputs.commit_message }}"
+
+      - name: Push changes
+        if: success()
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+
+      - name: Action Succeeded
+        if: success()
+        run: |
+          gh issue close --comment "Your contribution has been approved. Closing this issue..." ${{ github.event.issue.number }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Action Failed
+        if: failure()
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body "There was an error updating or adding this job. Error: ${{ steps.add_or_update_job.outputs.error }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

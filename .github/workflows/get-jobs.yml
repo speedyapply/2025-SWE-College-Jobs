@@ -1,0 +1,47 @@
+name: Get Jobs and Update Tables
+
+on:
+  schedule:
+    - cron: '0 12 * * *'
+
+jobs:
+  get-jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: .github/scripts
+
+      - name: Get Jobs and Update Tables
+        run: npm run get-jobs
+        working-directory: .github/scripts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          APPLY_IMG_URL: ${{ secrets.APPLY_IMG_URL }}
+
+      - name: Commit Markdown changes
+        if: success()
+        run: |
+          git config --local user.name ${{ secrets.GIT_USER_NAME }}
+          git config --local user.email ${{ secrets.GIT_USER_EMAIL }}
+          git add README.md NEW_GRAD_INTL.md INTERN_USA.md INTERN_INTL.md
+          git diff --staged --exit-code || git commit -m "chore: get positions & update tables"
+
+      - name: Push changes
+        if: success()
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+          force: true

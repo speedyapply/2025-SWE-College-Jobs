@@ -1,0 +1,77 @@
+name: New Position
+description: Add a new grad or intern job position.
+title: "New Position"
+labels: ["new"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## New SWE Position Form
+        
+        To contribute to the job lists, fill out the form below. We **ONLY** accept Software Engineering roles for internships or new college graduates.
+
+        We appreciate your contribution.
+  - type: input
+    id: job_title
+    attributes:
+      label: Position Title
+      placeholder: e.g. New Grad Software Engineer
+    validations:
+      required: true
+  - type: input
+    id: job_url
+    attributes:
+      label: Position Application Link
+      placeholder: e.g. https://company.com/posting
+    validations:
+      required: true
+  - type: input
+    id: company_name
+    attributes:
+      label: Company Name
+      placeholder: e.g. Amazon
+    validations:
+      required: true
+  - type: input
+    id: company_url
+    attributes:
+      label: Company Link
+      placeholder: e.g. https://amazon.com
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      placeholder: e.g. San Franciso, CA
+    validations:
+      required: true
+  - type: dropdown
+    id: job_type
+    attributes:
+      label: Is this a new grad position or an internship?
+      multiple: false
+      options:
+        - New Grad
+        - Internship
+    validations:
+      required: true
+  - type: dropdown
+    id: usa
+    attributes:
+      label: Is this position based in the USA?
+      multiple: false
+      options:
+        - No, it's international.
+        - Yes, it's based in the USA.
+    validations:
+      required: true
+  - type: input
+    id: github
+    attributes:
+      label: Your GitHub Email
+      description: |
+        (Optional) Include your GitHub email here if you would like the credit for this contribution when the job is added to our lists.
+      placeholder: e.g. bot@speedyapply.com
+    validations:
+      required: false

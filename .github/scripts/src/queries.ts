@@ -18,12 +18,12 @@ export async function fetchJobs(rpcName: RpcName | RpcNameFaang) {
   const { data, error } = await supabase.rpc(rpcName);
 
   if (error) {
-    throw new Error(`Supabase query error: ${error.message}`);
+    throw new Error(`Supabase query error: [${rpcName}] ${error.message}`);
   }
 
   try {
     return JobListSchema.parse(data);
   } catch (validationError) {
-    throw new Error(`Data validation error: ${validationError}`);
+    throw new Error(`Data validation error: [${rpcName}] ${validationError}`);
   }
 }

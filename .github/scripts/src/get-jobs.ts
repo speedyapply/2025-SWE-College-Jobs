@@ -35,22 +35,24 @@ function generateMarkdownTable(jobs: Job[]) {
   table += `|${HEADERS.map(() => "---").join("|")}|\n`;
 
   jobs.forEach((job) => {
-    const applyLink =
+    const applyCell =
       job.job_url && job.status === "active"
-        ? `<a href="${job.job_url}" target="_blank" rel="noopener noreferrer"><img src="${APPLY_IMG_URL}" alt="Apply" width="80"/></a>`
+        ? `<a href="${job.job_url}" target="_blank" rel="noopener noreferrer"><img src="${APPLY_IMG_URL}" alt="Apply" width="70"/></a>`
         : "Closed";
 
+    const companyCell = job.company_url
+      ? `<a href="${
+          job.company_url
+        }" target="_blank" rel="noopener noreferrer"><strong>${
+          job.company_name || ""
+        }</strong></a>`
+      : `<strong>${job.company_name || ""}</strong>`;
+
     const row = [
-      job.company_url
-        ? `<a href="${
-            job.company_url
-          }" target="_blank" rel="noopener noreferrer"><strong>${
-            job.company_name || ""
-          }</strong></a>`
-        : `<strong>${job.company_name || ""}</strong>`,
+      companyCell,
       job.job_title || "",
       job.job_locations || "",
-      applyLink,
+      applyCell,
       `${job.age}d`,
     ];
     table += `| ${row.join(" | ")} |\n`;

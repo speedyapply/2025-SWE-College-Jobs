@@ -5,7 +5,7 @@
 [:arrow_down_small:End of List](#bottom)
 <a name="top"></a>
 
-### FAANG
+### FAANG+
 
 <!-- TABLE_FAANG_START -->
 | Company | Position | Location | Posting | Age |

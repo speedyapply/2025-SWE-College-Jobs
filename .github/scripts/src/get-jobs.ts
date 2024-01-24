@@ -3,7 +3,7 @@ import * as path from "path";
 import * as core from "@actions/core";
 import dotenv from "dotenv";
 import { fetchJobs } from "./queries";
-import { JobInfo } from "./types/job.schema";
+import { Job } from "./types/job.schema";
 import { Table } from "./types/table";
 
 dotenv.config();
@@ -36,7 +36,7 @@ const TABLES: Table[] = [
 ];
 
 function generateMarkdownTable(
-  jobs: JobInfo[],
+  jobs: Job[],
   faangSalary?: boolean,
   interval: string = "yr"
 ) {
@@ -69,13 +69,16 @@ function generateMarkdownTable(
       `${job.age}d`,
     ];
 
-    if (faangSalary && "salary" in job) {
+    if (faangSalary && job.salary) {
       const salary =
         job.salary >= 1000
           ? `${(job.salary / 1000).toFixed(0)}k`
           : job.salary.toString();
 
       const salaryCell = `$${salary}/${interval}`;
+      row.splice(3, 0, salaryCell);
+    } else if (faangSalary && !job.salary) {
+      const salaryCell = "";
       row.splice(3, 0, salaryCell);
     }
 
@@ -107,7 +110,7 @@ function updateReadme(table: string, faangTable: string, filePath: string) {
   fs.writeFileSync(readmePath, readmeContent);
 }
 
-function sortJobs(a: JobInfo, b: JobInfo) {
+function sortJobs(a: Job, b: Job) {
   if (a.status === "active" && b.status !== "active") {
     return -1;
   }
@@ -121,10 +124,7 @@ async function main() {
   try {
     for (const table of TABLES) {
       const jobs = await fetchJobs(table.query);
-      const faangJobs = await fetchJobs(
-        `${table.query}_faang`,
-        table.faangSalary
-      );
+      const faangJobs = await fetchJobs(`${table.query}_faang`);
 
       jobs.sort(sortJobs);
       faangJobs.sort(sortJobs);

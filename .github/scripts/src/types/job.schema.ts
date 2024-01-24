@@ -8,16 +8,9 @@ const JobSchema = z.object({
   job_url: z.string(),
   age: z.number(),
   status: z.enum(["active", "inactive"]),
+  salary: z.number().nullable().optional(),
 });
 
 export const JobListSchema = z.array(JobSchema);
 
-const FaangJobSchema = JobSchema.extend({
-  salary: z.number(),
-});
-
-export const FaangJobListSchema = z.array(FaangJobSchema);
-
-export type JobInfo =
-  | z.infer<typeof JobSchema>
-  | z.infer<typeof FaangJobSchema>;
+export type Job = z.infer<typeof JobSchema>;

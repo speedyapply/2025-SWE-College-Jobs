@@ -3,7 +3,7 @@ import * as path from "path";
 import * as core from "@actions/core";
 import dotenv from "dotenv";
 import { fetchJobs } from "./queries";
-import { Job } from "./types/job.schema";
+import { JobInfo } from "./types/job.schema";
 import { Table } from "./types/table";
 
 dotenv.config();
@@ -14,25 +14,38 @@ const TABLES: Table[] = [
   {
     path: "../../../README.md",
     query: "get_intern_usa",
-  },
-  {
-    path: "../../../INTERN_INTL.md",
-    query: "get_intern_intl",
+    faangSalary: true,
+    interval: "hr",
   },
   {
     path: "../../../NEW_GRAD_USA.md",
     query: "get_new_grad_usa",
+    faangSalary: true,
+    interval: "yr",
+  },
+  {
+    path: "../../../INTERN_INTL.md",
+    query: "get_intern_intl",
+    faangSalary: false,
   },
   {
     path: "../../../NEW_GRAD_INTL.md",
     query: "get_new_grad_intl",
+    faangSalary: false,
   },
 ];
 
-function generateMarkdownTable(jobs: Job[]) {
-  let table = `| ${HEADERS.join(" | ")} |\n`;
+function generateMarkdownTable(
+  jobs: JobInfo[],
+  faangSalary?: boolean,
+  interval: string = "yr"
+) {
+  const headers = faangSalary
+    ? [...HEADERS.slice(0, 3), "Salary", ...HEADERS.slice(3)]
+    : HEADERS;
 
-  table += `|${HEADERS.map(() => "---").join("|")}|\n`;
+  let table = `| ${headers.join(" | ")} |\n`;
+  table += `|${headers.map(() => "---").join("|")}|\n`;
 
   jobs.forEach((job) => {
     const applyCell =
@@ -55,6 +68,17 @@ function generateMarkdownTable(jobs: Job[]) {
       applyCell,
       `${job.age}d`,
     ];
+
+    if (faangSalary && "salary" in job) {
+      const salary =
+        job.salary >= 1000
+          ? `${(job.salary / 1000).toFixed(0)}k`
+          : job.salary.toString();
+
+      const salaryCell = `$${salary}/${interval}`;
+      row.splice(3, 0, salaryCell);
+    }
+
     table += `| ${row.join(" | ")} |\n`;
   });
 
@@ -83,17 +107,34 @@ function updateReadme(table: string, faangTable: string, filePath: string) {
   fs.writeFileSync(readmePath, readmeContent);
 }
 
+function sortJobs(a: JobInfo, b: JobInfo) {
+  if (a.status === "active" && b.status !== "active") {
+    return -1;
+  }
+  if (a.status !== "active" && b.status === "active") {
+    return 1;
+  }
+  return a.age - b.age;
+}
+
 async function main() {
   try {
     for (const table of TABLES) {
       const jobs = await fetchJobs(table.query);
-      const faangJobs = await fetchJobs(`${table.query}_faang`);
+      const faangJobs = await fetchJobs(
+        `${table.query}_faang`,
+        table.faangSalary
+      );
 
-      jobs.sort((a, b) => a.age - b.age);
-      faangJobs.sort((a, b) => a.age - b.age);
+      jobs.sort(sortJobs);
+      faangJobs.sort(sortJobs);
 
       const markdownTable = generateMarkdownTable(jobs);
-      const faangMarkdownTable = generateMarkdownTable(faangJobs);
+      const faangMarkdownTable = generateMarkdownTable(
+        faangJobs,
+        table.faangSalary,
+        table.interval
+      );
 
       updateReadme(markdownTable, faangMarkdownTable, table.path);
     }

@@ -1,7 +1,7 @@
 {
   "name": "swe-college-jobs",
   "version": "1.0.0",
-  "description": "A consolidated list of internships & SWE new grad jobs in the US and across the world.",
+  "description": "Most comprehensive SWE internship & new graduate job list on GitHub.",
   "scripts": {
     "build": "tsc",
     "get-jobs": "tsc && node build/get-jobs.js",

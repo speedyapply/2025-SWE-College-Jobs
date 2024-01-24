@@ -1,8 +1,6 @@
 name: Get Jobs and Update Tables
 
 on:
-  push:
-    branches: [main]
   schedule:
     - cron: '0 12 * * *'
 

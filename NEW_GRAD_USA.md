@@ -1,4 +1,4 @@
-## 2024 USA SWE New Graduate Positions :mortar_board: [<img src="https://github.com/speedyapply/swe-college-jobs/assets/78247585/4a67848a-2a83-4c6c-9bb4-af5c908c3fce" alt="us" />](#)
+## 2024 USA SWE New Graduate Positions :mortar_board::eagle:
 
 [:page_with_curl:Return to README:page_with_curl:](/)
 

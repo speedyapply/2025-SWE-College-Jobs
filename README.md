@@ -2,7 +2,7 @@
 
 This repository is a consolidated list of Software Engineering jobs for college students in search of 2024 **internships** or **new graduate** positions.
 
-### USA Positions :eagle:
+### USA Positions 🇺🇸
 - [Internships :books:](#intern-usa)
 - [New Graduate :mortar_board:](/NEW_GRAD_USA.md)
 
@@ -17,7 +17,7 @@ _Built using [**JobSpy**](https://github.com/Bunsly/JobSpy) by Bunsly._
 _Looking to save time on job applications? Try out the [**SpeedyApply: Job Application Autofill Tool**](https://chrome.google.com/webstore/detail/speedyapply-job-applicati/mbgjopdedgonlbpikjfibkccpmhjbnag) Chrome extension._
 
 <a name="intern-usa"></a>
-## 2024 USA SWE Internships :books::eagle:
+## 2024 USA SWE Internships :books:🇺🇸
 
 [:arrow_down_small:End of List](#bottom)
 <a name="top"></a>

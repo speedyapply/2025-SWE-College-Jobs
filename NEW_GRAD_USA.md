@@ -1,4 +1,4 @@
-## 2024 USA SWE New Graduate Positions :mortar_board::eagle:
+## 2024 USA SWE New Graduate Positions :mortar_board:🇺🇸
 
 [:page_with_curl:Return to README:page_with_curl:](/)
 

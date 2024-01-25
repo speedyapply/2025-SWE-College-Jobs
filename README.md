@@ -1,13 +1,13 @@
-# Software Engineering Internship & New Grad Positions
-
+# Software Engineering Internships & New Grad Positions
 This repository is a consolidated list of Software Engineering jobs for college students in search of 2024 **internships** or **new graduate** positions.
 
-## Lists
+### USA Positions &nbsp;![us](https://github.com/speedyapply/swe-college-jobs/assets/78247585/60c59a4b-7056-47fc-afa5-aceba232222a)
+- [Internships :books:](#intern-usa)
+- [New Graduate :mortar_board:](/NEW_GRAD_USA.md)
 
-- [Internships USA :books::eagle:](#intern-usa)
-- [Internships International :books::globe_with_meridians:](/INTERN_INTL.md)
-- [New Graduate USA :mortar_board::eagle:](/NEW_GRAD_USA.md)
-- [New Graduate International :mortar_board::globe_with_meridians:](/NEW_GRAD_INTL.md)
+### International Positions :globe_with_meridians:
+- [Internships :books:](/INTERN_INTL.md)
+- [New Graduate :mortar_board:](/NEW_GRAD_INTL.md)
 
 :raised_hands: Interested in contributing? Open an issue to get started. :raised_hands:
 

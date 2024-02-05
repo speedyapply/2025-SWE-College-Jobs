@@ -3,12 +3,12 @@
 This repository is a consolidated list of Software Engineering jobs for college students in search of 2024 **internships** or **new graduate** positions.
 
 ### USA Positions :eagle:
-- [Internships :books:](#intern-usa)
-- [New Graduate :mortar_board:](/NEW_GRAD_USA.md)
+- [Internships :books:](#intern-usa) - **665** available
+- [New Graduate :mortar_board:](/NEW_GRAD_USA.md) - **312** available
 
 ### International Positions :globe_with_meridians:
-- [Internships :books:](/INTERN_INTL.md)
-- [New Graduate :mortar_board:](/NEW_GRAD_INTL.md)
+- [Internships :books:](/INTERN_INTL.md) - **559** available
+- [New Graduate :mortar_board:](/NEW_GRAD_INTL.md) - **307** available
 
 :raised_hands: Interested in contributing? Open an issue to get started. :raised_hands:
 

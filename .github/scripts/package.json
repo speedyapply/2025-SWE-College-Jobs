@@ -1,7 +1,7 @@
 {
   "name": "swe-college-jobs",
   "version": "1.0.0",
-  "description": "Most comprehensive SWE internship & new graduate job list on GitHub.",
+  "description": "The most comprehensive SWE internship & new graduate job list on GitHub.",
   "scripts": {
     "build": "tsc",
     "get-jobs": "tsc && node build/get-jobs.js",

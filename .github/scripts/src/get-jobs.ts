@@ -2,7 +2,7 @@ import * as fs from "fs";
 import * as path from "path";
 import * as core from "@actions/core";
 import dotenv from "dotenv";
-import { fetchJobs } from "./queries";
+import { fetchJobCounts, fetchJobs } from "./queries";
 import { Job } from "./types/job.schema";
 import { Table } from "./types/table";
 
@@ -107,7 +107,33 @@ function updateReadme(table: string, faangTable: string, filePath: string) {
 
   readmeContent = `${beforeOther}${startMarker}\n${table}\n${endMarker}${afterOther}`;
 
-  fs.writeFileSync(readmePath, readmeContent);
+  fs.writeFileSync(readmePath, readmeContent, { encoding: "utf8" });
+}
+
+async function updateCounts() {
+  const readmePath = path.join(__dirname, "../../../README.md");
+  let readmeContent = fs.readFileSync(readmePath, { encoding: "utf8" });
+
+  const jobCounts = await fetchJobCounts();
+
+  readmeContent = readmeContent.replace(
+    /(\[Internships :books:\]\(#intern-usa\))(\s+-\s+\*\*\d+\*\* available)?/,
+    `$1 - **${jobCounts.intern_usa_count}** available`
+  );
+  readmeContent = readmeContent.replace(
+    /(\[New Graduate :mortar_board:\]\(\/NEW_GRAD_USA\.md\))(\s+-\s+\*\*\d+\*\* available)?/,
+    `$1 - **${jobCounts.new_grad_usa_count}** available`
+  );
+  readmeContent = readmeContent.replace(
+    /(\[Internships :books:\]\(\/INTERN_INTL\.md\))(\s+-\s+\*\*\d+\*\*)?/,
+    `$1 - **${jobCounts.intern_intl_count}**`
+  );
+  readmeContent = readmeContent.replace(
+    /(\[New Graduate :mortar_board:\]\(\/NEW_GRAD_INTL\.md\))(\s+-\s+\*\*\d+\*\* available)?/,
+    `$1 - **${jobCounts.new_grad_intl_count}** available`
+  );
+
+  fs.writeFileSync(readmePath, readmeContent, { encoding: "utf8" });
 }
 
 function sortJobs(a: Job, b: Job) {
@@ -138,6 +164,8 @@ async function main() {
 
       updateReadme(markdownTable, faangMarkdownTable, table.path);
     }
+
+    updateCounts();
   } catch (error) {
     if (error instanceof Error) {
       core.setFailed(error.message);

@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 import { createClient } from "@supabase/supabase-js";
 import { JobListSchema } from "./types/job.schema";
+import { JobCountsSchema } from "./types/job-counts.schema";
 import { RpcName, RpcNameFaang } from "./types/rpc-name";
 
 dotenv.config();
@@ -25,5 +26,23 @@ export async function fetchJobs(rpcName: RpcName | RpcNameFaang) {
     return JobListSchema.parse(data);
   } catch (validationError) {
     throw new Error(`Data validation error: [${rpcName}] ${validationError}`);
+  }
+}
+
+export async function fetchJobCounts() {
+  if (!supabase) {
+    throw new Error("Supabase client is not initialized.");
+  }
+
+  const { data, error } = await supabase.rpc("get_job_counts");
+
+  if (error) {
+    throw new Error(`Supabase query error: ${error.message}`);
+  }
+
+  try {
+    return JobCountsSchema.parse(data);
+  } catch (validationError) {
+    throw new Error(`Data validation error: ${validationError}`);
   }
 }

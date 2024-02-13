@@ -34,7 +34,7 @@ export async function fetchJobCounts() {
     throw new Error("Supabase client is not initialized.");
   }
 
-  const { data, error } = await supabase.rpc("get_job_counts");
+  const { data, error } = await supabase.rpc("get_swe_job_counts");
 
   if (error) {
     throw new Error(`Supabase query error: ${error.message}`);

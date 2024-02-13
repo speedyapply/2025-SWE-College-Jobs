@@ -7,7 +7,6 @@ const JobSchema = z.object({
   job_locations: z.string().nullable(),
   job_url: z.string(),
   age: z.number(),
-  status: z.enum(["active", "inactive"]),
   salary: z.number().nullable().optional(),
 });
 

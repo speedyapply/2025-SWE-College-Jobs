@@ -13,24 +13,24 @@ const HEADERS = ["Company", "Position", "Location", "Posting", "Age"];
 const TABLES: Table[] = [
   {
     path: "../../../README.md",
-    query: "get_intern_usa",
+    query: "get_swe_intern_usa",
     faangSalary: true,
     interval: "hr",
   },
   {
     path: "../../../NEW_GRAD_USA.md",
-    query: "get_new_grad_usa",
+    query: "get_swe_new_grad_usa",
     faangSalary: true,
     interval: "yr",
   },
   {
     path: "../../../INTERN_INTL.md",
-    query: "get_intern_intl",
+    query: "get_swe_intern_intl",
     faangSalary: false,
   },
   {
     path: "../../../NEW_GRAD_INTL.md",
-    query: "get_new_grad_intl",
+    query: "get_swe_new_grad_intl",
     faangSalary: false,
   },
 ];
@@ -48,10 +48,7 @@ function generateMarkdownTable(
   table += `|${headers.map(() => "---").join("|")}|\n`;
 
   jobs.forEach((job) => {
-    const applyCell =
-      job.job_url && job.status === "active"
-        ? `<a href="${job.job_url}" target="_blank" rel="noopener noreferrer"><img src="${APPLY_IMG_URL}" alt="Apply" width="70"/></a>`
-        : "Closed";
+    const applyCell = `<a href="${job.job_url}" target="_blank" rel="noopener noreferrer"><img src="${APPLY_IMG_URL}" alt="Apply" width="70"/></a>`;
 
     const companyCell = job.company_url
       ? `<a href="${
@@ -136,24 +133,14 @@ async function updateCounts() {
   fs.writeFileSync(readmePath, readmeContent, { encoding: "utf8" });
 }
 
-function sortJobs(a: Job, b: Job) {
-  if (a.status === "active" && b.status !== "active") {
-    return -1;
-  }
-  if (a.status !== "active" && b.status === "active") {
-    return 1;
-  }
-  return a.age - b.age;
-}
-
 async function main() {
   try {
     for (const table of TABLES) {
       const jobs = await fetchJobs(table.query);
       const faangJobs = await fetchJobs(`${table.query}_faang`);
 
-      jobs.sort(sortJobs);
-      faangJobs.sort(sortJobs);
+      jobs.sort((a, b) => a.age - b.age);
+      faangJobs.sort((a, b) => a.age - b.age);
 
       const markdownTable = generateMarkdownTable(jobs);
       const faangMarkdownTable = generateMarkdownTable(

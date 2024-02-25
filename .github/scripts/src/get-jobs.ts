@@ -48,12 +48,10 @@ function generateMarkdownTable(
   table += `|${headers.map(() => "---").join("|")}|\n`;
 
   jobs.forEach((job) => {
-    const applyCell = `<a href="${job.job_url}" target="_blank" rel="noopener noreferrer"><img src="${APPLY_IMG_URL}" alt="Apply" width="70"/></a>`;
+    const applyCell = `<a href="${job.job_url}"><img src="${APPLY_IMG_URL}" alt="Apply" width="70"/></a>`;
 
     const companyCell = job.company_url
-      ? `<a href="${
-          job.company_url
-        }" target="_blank" rel="noopener noreferrer"><strong>${
+      ? `<a href="${job.company_url}"><strong>${
           job.company_name || ""
         }</strong></a>`
       : `<strong>${job.company_name || ""}</strong>`;

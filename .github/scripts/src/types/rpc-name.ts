@@ -1,11 +1,7 @@
-export type RpcName =
-  | "get_swe_new_grad_usa"
-  | "get_swe_new_grad_intl"
-  | "get_swe_intern_usa"
-  | "get_swe_intern_intl";
+type Role = "swe_new_grad" | "swe_intern";
+type Region = "usa" | "intl";
+export type BaseRpcName = `get_${Role}_${Region}`;
 
-export type RpcNameFaang =
-  | "get_swe_new_grad_usa_faang"
-  | "get_swe_new_grad_intl_faang"
-  | "get_swe_intern_usa_faang"
-  | "get_swe_intern_intl_faang";
+type RpcNameFaang = `${BaseRpcName}_faang`;
+type RpcNameQuant = `${BaseRpcName}_quant`;
+export type RpcName = BaseRpcName | RpcNameFaang | RpcNameQuant;

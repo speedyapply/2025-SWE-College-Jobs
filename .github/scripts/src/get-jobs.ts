@@ -4,43 +4,17 @@ import * as core from "@actions/core";
 import dotenv from "dotenv";
 import { fetchJobCounts, fetchJobs } from "./queries";
 import { Job } from "./types/job.schema";
-import { Table } from "./types/table";
+import { HEADERS, MARKERS, TABLES } from "./config";
 
 dotenv.config();
 const APPLY_IMG_URL = process.env.APPLY_IMG_URL;
 
-const HEADERS = ["Company", "Position", "Location", "Posting", "Age"];
-const TABLES: Table[] = [
-  {
-    path: "../../../README.md",
-    query: "get_swe_intern_usa",
-    faangSalary: true,
-    interval: "hr",
-  },
-  {
-    path: "../../../NEW_GRAD_USA.md",
-    query: "get_swe_new_grad_usa",
-    faangSalary: true,
-    interval: "yr",
-  },
-  {
-    path: "../../../INTERN_INTL.md",
-    query: "get_swe_intern_intl",
-    faangSalary: false,
-  },
-  {
-    path: "../../../NEW_GRAD_INTL.md",
-    query: "get_swe_new_grad_intl",
-    faangSalary: false,
-  },
-];
-
 function generateMarkdownTable(
   jobs: Job[],
-  faangSalary?: boolean,
+  salary?: boolean,
   interval: string = "yr"
 ) {
-  const headers = faangSalary
+  const headers = salary
     ? [...HEADERS.slice(0, 3), "Salary", ...HEADERS.slice(3)]
     : HEADERS;
 
@@ -64,7 +38,7 @@ function generateMarkdownTable(
       `${job.age}d`,
     ];
 
-    if (faangSalary && job.salary) {
+    if (salary && job.salary) {
       const salary =
         job.salary >= 1000
           ? `${(job.salary / 1000).toFixed(0)}k`
@@ -72,7 +46,7 @@ function generateMarkdownTable(
 
       const salaryCell = `$${salary}/${interval}`;
       row.splice(3, 0, salaryCell);
-    } else if (faangSalary && !job.salary) {
+    } else if (salary && !job.salary) {
       const salaryCell = "";
       row.splice(3, 0, salaryCell);
     }
@@ -83,26 +57,29 @@ function generateMarkdownTable(
   return table;
 }
 
-function updateReadme(table: string, faangTable: string, filePath: string) {
+function updateTable(
+  readmeContent: string,
+  marker: { start: string; end: string },
+  tableContent: string
+): string {
+  const { start, end } = marker;
+  const before = readmeContent.split(start)[0];
+  const after = readmeContent.split(end)[1] ?? "";
+  return `${before}${start}\n${tableContent}\n${end}${after}`;
+}
+
+function updateReadme(
+  tables: { [K in keyof typeof MARKERS]: string },
+  filePath: string
+) {
   const readmePath = path.join(__dirname, filePath);
   let readmeContent = fs.readFileSync(readmePath, "utf8");
 
-  const startMarker = "<!-- TABLE_START -->";
-  const endMarker = "<!-- TABLE_END -->";
-  const faangStartMarker = "<!-- TABLE_FAANG_START -->";
-  const faangEndMarker = "<!-- TABLE_FAANG_END -->";
+  readmeContent = updateTable(readmeContent, MARKERS.faang, tables.faang);
+  readmeContent = updateTable(readmeContent, MARKERS.quant, tables.quant);
+  readmeContent = updateTable(readmeContent, MARKERS.other, tables.other);
 
-  const beforeFaang = readmeContent.split(faangStartMarker)[0];
-  const afterFaang = readmeContent.split(faangEndMarker)[1];
-
-  readmeContent = `${beforeFaang}${faangStartMarker}\n${faangTable}\n${faangEndMarker}${afterFaang}`;
-
-  const beforeOther = readmeContent.split(startMarker)[0];
-  const afterOther = readmeContent.split(endMarker)[1];
-
-  readmeContent = `${beforeOther}${startMarker}\n${table}\n${endMarker}${afterOther}`;
-
-  fs.writeFileSync(readmePath, readmeContent, { encoding: "utf8" });
+  fs.writeFileSync(readmePath, readmeContent, "utf8");
 }
 
 async function updateCounts() {
@@ -134,20 +111,21 @@ async function updateCounts() {
 async function main() {
   try {
     for (const table of TABLES) {
-      const jobs = await fetchJobs(table.query);
       const faangJobs = await fetchJobs(`${table.query}_faang`);
+      const quantJobs = await fetchJobs(`${table.query}_quant`);
+      const jobs = await fetchJobs(table.query);
 
-      jobs.sort((a, b) => a.age - b.age);
       faangJobs.sort((a, b) => a.age - b.age);
+      quantJobs.sort((a, b) => a.age - b.age);
+      jobs.sort((a, b) => a.age - b.age);
 
-      const markdownTable = generateMarkdownTable(jobs);
-      const faangMarkdownTable = generateMarkdownTable(
-        faangJobs,
-        table.faangSalary,
-        table.interval
-      );
+      const tables = {
+        faang: generateMarkdownTable(faangJobs, table.salary, table.interval),
+        quant: generateMarkdownTable(quantJobs, table.salary, table.interval),
+        other: generateMarkdownTable(jobs),
+      };
 
-      updateReadme(markdownTable, faangMarkdownTable, table.path);
+      updateReadme(tables, table.path);
     }
 
     updateCounts();

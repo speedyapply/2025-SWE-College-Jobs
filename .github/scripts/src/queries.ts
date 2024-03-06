@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import { createClient } from "@supabase/supabase-js";
 import { JobListSchema } from "./types/job.schema";
 import { JobCountsSchema } from "./types/job-counts.schema";
-import { RpcName, RpcNameFaang } from "./types/rpc-name";
+import { RpcName } from "./types/rpc-name";
 
 dotenv.config();
 const supabaseUrl = process.env.SUPABASE_URL;
@@ -11,7 +11,7 @@ const supabaseKey = process.env.SUPABASE_KEY;
 const supabase =
   supabaseUrl && supabaseKey ? createClient(supabaseUrl, supabaseKey) : null;
 
-export async function fetchJobs(rpcName: RpcName | RpcNameFaang) {
+export async function fetchJobs(rpcName: RpcName) {
   if (!supabase) {
     throw new Error("Supabase client is not initialized.");
   }

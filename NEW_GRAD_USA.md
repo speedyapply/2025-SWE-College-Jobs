@@ -44,6 +44,8 @@
 <!-- TABLE_START -->
 | Company | Position | Location | Posting | Age |
 |---|---|---|---|---|
+| <strong>New York Cancer & Blood Specialists</strong> | Junior Software Engineer | Shirley, NY | <a href="https://www.indeed.com/viewjob?jk=ff71e6d4b8f14946"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
+| <strong>Emonics LLC</strong> | Junior Software Engineer | Fishers Island, NY | <a href="https://www.indeed.com/viewjob?jk=1421e31203f36fa4"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
 | <strong>SimVentions - Inc</strong> | Junior Software Engineer | King George, VA | <a href="https://www.indeed.com/viewjob?jk=2853a8ce7ca4efbf"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
 | <strong>LinQuest Corporation</strong> | Junior Software Engineer | Colorado Springs, CO | <a href="https://www.indeed.com/viewjob?jk=34438a436b7e3111"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
 | <strong>Smith Douglas Homes</strong> | Entry Level Software Engineer | Woodstock, GA | <a href="https://www.indeed.com/viewjob?jk=003e50ba90ab091b"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
@@ -61,6 +63,7 @@
 | <strong>Echo Incorporated</strong> | Junior Software Engineer | Lake Zurich, IL | <a href="https://www.indeed.com/viewjob?jk=479c6b93422a8ca2"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 5d |
 | <strong>Paramount Management Group - LLC</strong> | Junior Software Engineer | Lancaster, PA | <a href="https://www.indeed.com/viewjob?jk=c37ece2575348ea7"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 5d |
 | <strong>IC Defense</strong> | Junior Front End Developer | Annapolis Junction, MD | <a href="https://www.indeed.com/viewjob?jk=18239a9d34833482"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 7d |
+| <strong>Liberty Personnel Services</strong> | Junior Software Engineer | Houston, TX | <a href="https://www.indeed.com/viewjob?jk=94b60109e662499a"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 7d |
 | <strong>IC Defense</strong> | Junior Software Engineer | Annapolis Junction, MD | <a href="https://www.indeed.com/viewjob?jk=581b09a2d57176b7"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 8d |
 | <strong>Space Ground System Solutions</strong> | Junior Software Engineer | Alexandria, VA | <a href="https://www.indeed.com/viewjob?jk=7515d9c66c7d92ab"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 8d |
 | <a href="http://heartflow.com"><strong>HeartFlow</strong></a> | Entry-level Software Engineer - Frontend Full Stack  | Mountain View, CA | <a href="https://boards.greenhouse.io/heartflowinc/jobs/5094850004"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 8d |

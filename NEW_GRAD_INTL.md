@@ -56,12 +56,14 @@
 <!-- TABLE_START -->
 | Company | Position | Location | Posting | Age |
 |---|---|---|---|---|
+| <strong>Certified Technical Experts IN</strong> | Junior Software Engineer | Remote | <a href="https://www.indeed.com/viewjob?jk=e021538844dd13ea"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
 | <strong>IZEA</strong> | Junior Front End Developer | Remote | <a href="https://www.indeed.com/viewjob?jk=0f1327111ba7d43e"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
 | <a href="https://www.evotec.com/"><strong>Evotec</strong></a> | Junior Software Developer - All genders | Toulouse, France | <a href="https://evotecgroup.wd3.myworkdayjobs.com/en-US/Evotec_Career_Site/job/Toulouse/Junior-Software-Developer---All-genders_JOBID-10422"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
 | <strong>PureCode AI</strong> | Junior Software Engineer | Remote | <a href="https://www.indeed.com/viewjob?jk=410176793abc1ec9"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
 | <a href="https://www.finastra.com/"><strong>Finastra</strong></a> | Junior Software Engineer | Bucharest, Romania | <a href="https://dh.wd3.myworkdayjobs.com/en-US/DHC/job/Bucharest/Junior-Software-Engineer_REQ0224_0031227"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
 | <a href="https://www.outbrain.com/"><strong>Outbrain</strong></a> | Backend Engineer - entry level | Ljubljana, Slovenia | <a href="https://boards.eu.greenhouse.io/outbraininc/jobs/4300894101"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
 | <strong>Azure Summit Technology</strong> | Junior Software Engineer | Remote | <a href="https://www.indeed.com/viewjob?jk=55d9f99b6c8c5de8"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 3d |
+| <strong>Interapt</strong> | Junior Software Test Engineer | Remote | <a href="https://www.indeed.com/viewjob?jk=e4137f920464a98e"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 3d |
 | <a href="https://boomi.com/"><strong>Boomi</strong></a> | Software Engineer 1 - Triage | India | <a href="https://boomi.com/boomi-jobs/?gh_jid=5081936004"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 4d |
 | <a href="https://www.tyro.com/"><strong>Tyro</strong></a> | Graduate Software Engineer | Melbourne, Australia | <a href="https://jobs.lever.co/tyro/1e54b827-b02b-41bf-9e51-bfbd7e91518e/apply"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 4d |
 | <a href="https://esab.com/"><strong>ESAB</strong></a> | Graduate Program- EQS Control Software Engineer | Gothenburg, Sweden | <a href="https://esab.wd5.myworkdayjobs.com/en-US/esabcareers/job/Sweden-Goteborg/Graduate-Program--EQS-Control-Software-Engineer_R0020682"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 5d |

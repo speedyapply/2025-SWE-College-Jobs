@@ -3,12 +3,12 @@
 This repository is a comprehensive list of Software Engineering jobs for college students in search of 2024 **internships** or **new graduate** positions. The positions are updated daily, and we prioritize jobs posted within the last 60 days.
 
 ### USA Positions :eagle:
-- [Internships :books:](#intern-usa) - **1046** available
-- [New Graduate :mortar_board:](/NEW_GRAD_USA.md) - **355** available
+- [Internships :books:](#intern-usa) - **1053** available
+- [New Graduate :mortar_board:](/NEW_GRAD_USA.md) - **358** available
 
 ### International Positions :globe_with_meridians:
-- [Internships :books:](/INTERN_INTL.md) - **442** available
-- [New Graduate :mortar_board:](/NEW_GRAD_INTL.md) - **257** available
+- [Internships :books:](/INTERN_INTL.md) - **445** available
+- [New Graduate :mortar_board:](/NEW_GRAD_INTL.md) - **259** available
 
 :raised_hands: Interested in contributing? Open an issue to get started. :raised_hands:
 
@@ -74,6 +74,14 @@ _Looking to save time on job applications? Try out the [**SpeedyApply: Job Appli
 <!-- TABLE_START -->
 | Company | Position | Location | Posting | Age |
 |---|---|---|---|---|
+| <a href="https://www.planet.com/"><strong>Planet</strong></a> | Intern - Flight Software Engineering | San Francisco, CA | <a href="https://boards.greenhouse.io/planetlabs/jobs/5752476"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
+| <a href="https://www.chewy.com"><strong>Chewy</strong></a> | Software Engineer Co-op | Minneapolis, MN | <a href="https://careers.chewy.com/us/en/job/5751329?gh_jid=5751329"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
+| <a href="https://www.chewy.com"><strong>Chewy</strong></a> | Software Engineer Co-op | Bellevue, WA | <a href="https://careers.chewy.com/us/en/job/5798983?gh_jid=5798983"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
+| <a href="https://www.chewy.com"><strong>Chewy</strong></a> | Software Engineer Co-op | Boston, MA | <a href="https://careers.chewy.com/us/en/job/5751006?gh_jid=5751006"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
+| <a href="https://www.chewy.com"><strong>Chewy</strong></a> | Software Engineer Intern | Minneapolis, MN | <a href="https://careers.chewy.com/us/en/job/5751358?gh_jid=5751358"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
+| <a href="https://www.chewy.com"><strong>Chewy</strong></a> | Software Engineer Intern | Plantation, FL | <a href="https://careers.chewy.com/us/en/job/5751360?gh_jid=5751360"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
+| <a href="https://www.chewy.com"><strong>Chewy</strong></a> | Software Engineer Intern | Boston, MA | <a href="https://careers.chewy.com/us/en/job/5751349?gh_jid=5751349"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
+| <a href="https://www.chewy.com"><strong>Chewy</strong></a> | Software Engineer Intern | Bellevue, WA | <a href="https://careers.chewy.com/us/en/job/5798932?gh_jid=5798932"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
 | <a href="http://www.tracelink.com"><strong>TraceLink</strong></a> | Software Developer Intern | Wilmington, MA | <a href="https://www.tracelink.com/about/culture-and-careers/jobs?gh_jid=4261808007"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
 | <strong>Legrand North America</strong> | Software Development Intern | Kenosha, WI | <a href="https://www.indeed.com/viewjob?jk=73f027bea6326ac1"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
 | <strong>Ags Llc</strong> | Software Engineer Intern | Duluth, GA | <a href="https://www.indeed.com/viewjob?jk=52269cc959d79879"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
@@ -87,7 +95,6 @@ _Looking to save time on job applications? Try out the [**SpeedyApply: Job Appli
 | <a href="https://wealth.com/"><strong>Wealth</strong></a> | Software Engineer Internship | Remote, OR | <a href="https://jobs.lever.co/WealthFinancialTechnologies/66cae68b-14e4-45a9-910a-91d1f66a7d83/apply"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
 | <strong>Kognitos</strong> | Software Engineer Intern | San Jose, CA | <a href="https://www.indeed.com/viewjob?jk=5787e9a03ab490db"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 3d |
 | <strong>Track5Media</strong> | Software Engineer Intern | Lancaster, PA | <a href="https://www.indeed.com/viewjob?jk=e75d9fcf8f304308"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 3d |
-| <a href="https://www.udemy.com/"><strong>Udemy</strong></a> | Software Engineer Intern - Org Success | San Francisco, CA | <a href="https://app.careerpuck.com/job-board/udemy/job/5088053004?gh_jid=5088053004"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 3d |
 | <a href="https://appian.com/"><strong>Appian</strong></a> | Software Engineer Intern | McLean, VA | <a href="https://boards.greenhouse.io/appian/jobs/5785341"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 3d |
 | <a href="https://coherehealth.com/"><strong>Cohere Health</strong></a> | SWE CO-OP - Security - June - Nov 2024 | USA | <a href="https://boards.greenhouse.io/coherehealth/jobs/5914693003"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 3d |
 | <a href="https://c3.ai/"><strong>C3 AI</strong></a> | Software Engineer - Intern - Summer 2024 | Redwood City, CA | <a href="https://c3.ai/job-description/6914180002?gh_jid=6914180002"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 3d |

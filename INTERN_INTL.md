@@ -78,6 +78,9 @@
 <!-- TABLE_START -->
 | Company | Position | Location | Posting | Age |
 |---|---|---|---|---|
+| <a href="http://www.roku.com/"><strong>Roku</strong></a> | Software Engineer Intern - Embedded | Hsinchu, Taiwan | <a href="https://www.weareroku.com/jobs/5799661?gh_jid=5799661"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
+| <a href="https://www.tripadvisor.com/"><strong>Tripadvisor</strong></a> | Software Engineering Intern x5 - Viator | Oxford, United Kingdom | <a href="https://boards.greenhouse.io/tripadvisor/jobs/5662036"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
+| <a href="https://www.orioninc.com/"><strong>Orion Innovation</strong></a> | Internship - Software Developer - Hybrid | Bucharest, Romania | <a href="https://www.orioninc.com/careers/job/?gh_jid=4340853006"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 0d |
 | <a href="https://www.nianticlabs.com/"><strong>Niantic</strong></a> | 2024 Software Engineering Intern | London, United Kingdom | <a href="https://boards.greenhouse.io/niantic/jobs/7279409002"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 1d |
 | <strong>Panoptyc</strong> | Software Engineer Intern | Remote | <a href="https://www.indeed.com/viewjob?jk=9b67d7fc06dd6e2d"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
 | <strong>AI Grants</strong> | Software Development Intern | Remote | <a href="https://www.indeed.com/viewjob?jk=493a326d2a6fc453"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |

@@ -3,7 +3,7 @@
 This repository is a comprehensive list of Software Engineering jobs for college students in search of 2024 **internships** or **new graduate** positions. The positions are updated daily, and we prioritize jobs posted within the last 60 days.
 
 ### USA Positions :eagle:
-- [Internships :books:](#intern-usa) - **1035** available
+- [Internships :books:](#intern-usa) - **1034** available
 - [New Graduate :mortar_board:](/NEW_GRAD_USA.md) - **343** available
 
 ### International Positions :globe_with_meridians:
@@ -244,7 +244,6 @@ _Looking to save time on job applications? Try out the [**SpeedyApply: Job Appli
 | <strong>Mettler-Toledo</strong> | Intern- Software Engineer | Columbia, MD | <a href="https://mt.avature.net/careers/JobDetail?jobId=15670"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 21d |
 | <strong>Cox Automotive</strong> | Data Engineer Intern - Summer 2024 | Draper, UT | <a href="https://click.appcast.io/track/iocc4hh-org?cs=5c&jg=65v4&bid=lUf2CslKyPxm6i440ZgUYA=="><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 21d |
 | <strong>Lockheed Martin</strong> | Software Engineering Intern | Manassas, VA | <a href="https://click.appcast.io/track/ioc7tot-org?cs=5c&jg=54h7&bid=lUf2CslKyPxm6i440ZgUYA=="><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 21d |
-| <a href="https://www.intel.com/"><strong>Intel</strong></a> | Software Engineer Graduate Intern. | USA | <a href="https://intel.wd1.myworkdayjobs.com/en-US/External/job/Virtual-US/Software-Engineer-Graduate-Intern_JR0258300"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 21d |
 | <strong>Brightree</strong> | Data Engineer Intern | Peachtree Corners, GA | <a href="https://resmed.wd3.myworkdayjobs.com/en-US/Brightree_External_Careers/job/Peachtree-Corners-GA-United-States/Data-Engineer-Intern_JR_031353-1"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 21d |
 | <strong>Samsung Sds America</strong> | Internship - Software Development | Ridgefield Park, NJ | <a href="https://www.ziprecruiter.com/jobs//j?lvk=CUcN5gs0Y6W9wounl9zDuw"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 21d |
 | <strong>Juniper Networks</strong> | Software Engineering Intern - Embedded Software - Summer 2024 | Sunnyvale, CA | <a href="https://ejif.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions/preview/1010365"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 21d |

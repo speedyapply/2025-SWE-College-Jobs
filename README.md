@@ -3,7 +3,7 @@
 This repository is a comprehensive list of Software Engineering jobs for college students in search of 2024 **internships** or **new graduate** positions. The positions are updated daily, and we prioritize jobs posted within the last 60 days.
 
 ### USA Positions :eagle:
-- [Internships :books:](#intern-usa) - **1026** available
+- [Internships :books:](#intern-usa) - **1025** available
 - [New Graduate :mortar_board:](/NEW_GRAD_USA.md) - **338** available
 
 ### International Positions :globe_with_meridians:
@@ -93,7 +93,6 @@ _Looking to save time on job applications? Try out the [**SpeedyApply: Job Appli
 | <strong>Merrill Steel</strong> | Software Development Intern | Schofield, WI | <a href="https://www.indeed.com/viewjob?jk=32a0d78f265fe28c"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
 | <strong>Rosenxt</strong> | Software Engineer Intern | San Luis Obispo, CA | <a href="https://www.indeed.com/viewjob?jk=ed23cfb97aa7661f"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
 | <strong>Third Pole - Inc.</strong> | Software Engineer Intern | Waltham, MA | <a href="https://www.indeed.com/viewjob?jk=15adf2220aa7c1cf"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
-| <strong>IDSS Holdings - Inc.</strong> | Software Engineer Intern | Boxborough, MA | <a href="https://www.indeed.com/viewjob?jk=163419ddd39a0eb8"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 2d |
 | <strong>Recorded Future</strong> | Software Engineer Intern | Somerville, MA | <a href="https://www.indeed.com/viewjob?jk=7cce3a5bd4ce5f40"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 3d |
 | <strong>MultiCare Health System</strong> | Software Engineer Intern | Myrtle Point, OR | <a href="https://www.indeed.com/viewjob?jk=af79d4105ba746c5"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 3d |
 | <strong>Mesh Systems</strong> | Software Engineer Intern | Indianapolis, IN | <a href="https://www.indeed.com/viewjob?jk=8c4e7ee6a43b5fce"><img src="https://i.imgur.com/JpkfjIq.png" alt="Apply" width="70"/></a> | 3d |

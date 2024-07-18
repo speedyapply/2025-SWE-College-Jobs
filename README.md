@@ -1,6 +1,6 @@
 # Software Engineering Internship & New Grad Positions
 
-This repository is a comprehensive list of Software Engineering jobs for college students in search of 2024 **internships** or **new graduate** positions. The positions are updated daily, and we prioritize jobs posted within the last 60 days.
+This repository is a comprehensive list of Software Engineering jobs for college students in search of **internships** or **new graduate** positions. The positions are updated daily, and we prioritize jobs posted within the last 60 days.
 
 ### USA Positions :eagle:
 - [Internships :books:](#intern-usa) - **40** available

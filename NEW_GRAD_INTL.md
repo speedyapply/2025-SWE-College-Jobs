@@ -1,7 +1,5 @@
 ## 2025 International SWE New Grad Positions :mortar_board::globe_with_meridians:
 
-[:page_with_curl:Return to README:page_with_curl:](/)
-
 ### USA Positions :eagle:
 - [Internships :books:](#intern-usa) - **161** available
 - [New Graduate :mortar_board:](/NEW_GRAD_USA.md) - **72** available

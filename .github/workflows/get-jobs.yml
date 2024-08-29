@@ -3,6 +3,7 @@ name: Get Jobs and Update Tables
 on:
   schedule:
     - cron: '0 12 * * *'
+  workflow_dispatch:
 
 jobs:
   get-jobs:

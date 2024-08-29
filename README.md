@@ -1,14 +1,14 @@
 # 2025 Software Engineering Internship & New Grad Positions
 
-This repository is a comprehensive list of Software Engineering jobs for college students in search of **internships** or **new graduate** positions. The positions are updated daily, and we prioritize jobs posted within the last 60 days.
+This repository is a comprehensive list of Software Engineering jobs for college students in search of **internships** or **new graduate** positions. The positions are updated daily, and we prioritize jobs posted within the last 120 days.
 
 ### USA Positions :eagle:
-- [Internships :books:](#intern-usa) - **193** available
-- [New Graduate :mortar_board:](/NEW_GRAD_USA.md) - **100** available
+- [Internships :books:](/) - **195** available ([FAANG+](#faang), [Quant](#quant), [Other](#other))
+- [New Graduate :mortar_board:](/NEW_GRAD_USA.md) - **100** available ([FAANG+](/NEW_GRAD_USA.md#faang), [Quant](/NEW_GRAD_USA.md#quant), [Other](/NEW_GRAD_USA.md#other))
 
 ### International Positions :globe_with_meridians:
-- [Internships :books:](/INTERN_INTL.md) - **169** available
-- [New Graduate :mortar_board:](/NEW_GRAD_INTL.md) - **121** available
+- [Internships :books:](/INTERN_INTL.md) - **169** available ([FAANG+](/INTERN_INTL.md#faang), [Quant](/INTERN_INTL.md#quant), [Other](/INTERN_INTL.md#other))
+- [New Graduate :mortar_board:](/NEW_GRAD_INTL.md) - **128** available ([FAANG+](/NEW_GRAD_INTL.md#faang), [Quant](/NEW_GRAD_INTL.md#quant), [Other](/NEW_GRAD_INTL.md#other))
 
 :raised_hands: Interested in contributing? Open an issue to get started. :raised_hands:
 

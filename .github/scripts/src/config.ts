@@ -1,27 +1,39 @@
 export const TABLES = [
   {
     path: "../../../README.md",
-    query: "get_swe_intern_usa",
     salary: true,
     interval: "hr",
+    query: {
+      job_type: "intern",
+      is_usa: true,
+    },
   },
   {
     path: "../../../NEW_GRAD_USA.md",
-    query: "get_swe_new_grad_usa",
     salary: true,
     interval: "yr",
+    query: {
+      job_type: "new_grad",
+      is_usa: true,
+    },
   },
   {
     path: "../../../INTERN_INTL.md",
-    query: "get_swe_intern_intl",
     salary: false,
     interval: undefined,
+    query: {
+      job_type: "intern",
+      is_usa: false,
+    },
   },
   {
     path: "../../../NEW_GRAD_INTL.md",
-    query: "get_swe_new_grad_intl",
     salary: false,
     interval: undefined,
+    query: {
+      job_type: "new_grad",
+      is_usa: false,
+    },
   },
 ] as const;
 

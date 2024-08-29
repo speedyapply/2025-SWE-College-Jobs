@@ -111,9 +111,18 @@ async function updateCounts() {
 async function main() {
   try {
     for (const table of TABLES) {
-      const faangJobs = await fetchJobs(`${table.query}_faang`);
-      const quantJobs = await fetchJobs(`${table.query}_quant`);
-      const jobs = await fetchJobs(table.query);
+      const faangJobs = await fetchJobs({
+        ...table.query,
+        company_type: "faang",
+      });
+      const quantJobs = await fetchJobs({
+        ...table.query,
+        company_type: "financial",
+      });
+      const jobs = await fetchJobs({
+        ...table.query,
+        company_type: "other",
+      });
 
       faangJobs.sort((a, b) => a.age - b.age);
       quantJobs.sort((a, b) => a.age - b.age);

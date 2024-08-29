@@ -1,4 +1,4 @@
-## 2024 International SWE New Grad Positions :mortar_board::globe_with_meridians:
+## 2025 International SWE New Grad Positions :mortar_board::globe_with_meridians:
 
 [:page_with_curl:Return to README:page_with_curl:](/)
 

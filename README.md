@@ -1,4 +1,4 @@
-# Software Engineering Internship & New Grad Positions
+# 2025 Software Engineering Internship & New Grad Positions
 
 This repository is a comprehensive list of Software Engineering jobs for college students in search of **internships** or **new graduate** positions. The positions are updated daily, and we prioritize jobs posted within the last 60 days.
 
@@ -17,7 +17,7 @@ _Built using [**JobSpy**](https://github.com/Bunsly/JobSpy) by Bunsly._
 _Looking to save time on job applications? Try out the [**SpeedyApply: Job Application Autofill Tool**](https://chrome.google.com/webstore/detail/speedyapply-job-applicati/mbgjopdedgonlbpikjfibkccpmhjbnag) Chrome extension._
 
 <a name="intern-usa"></a>
-## 2024 USA SWE Internships :books::eagle:
+## 2025 USA SWE Internships :books::eagle:
 
 [:arrow_down_small:End of List](#bottom)
 <a name="top"></a>

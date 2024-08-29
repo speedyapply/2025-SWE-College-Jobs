@@ -2,6 +2,14 @@
 
 [:page_with_curl:Return to README:page_with_curl:](/)
 
+### USA Positions :eagle:
+- [Internships :books:](#intern-usa) - **161** available
+- [New Graduate :mortar_board:](/NEW_GRAD_USA.md) - **72** available
+
+### International Positions :globe_with_meridians:
+- [Internships :books:](/INTERN_INTL.md) - **137** available
+- [New Graduate :mortar_board:](/NEW_GRAD_INTL.md) - **102** available
+
 [:arrow_down_small:End of List](#bottom)
 <a name="top"></a>
 

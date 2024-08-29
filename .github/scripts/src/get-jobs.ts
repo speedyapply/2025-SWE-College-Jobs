@@ -82,8 +82,8 @@ function updateReadme(
   fs.writeFileSync(readmePath, readmeContent, "utf8");
 }
 
-async function updateCounts() {
-  const readmePath = path.join(__dirname, "../../../README.md");
+async function updateCounts(filePath: string) {
+  const readmePath = path.join(__dirname, filePath);
   let readmeContent = fs.readFileSync(readmePath, { encoding: "utf8" });
 
   const jobCounts = await fetchJobCounts();
@@ -135,9 +135,8 @@ async function main() {
       };
 
       updateReadme(tables, table.path);
+      updateCounts(table.path);
     }
-
-    updateCounts();
   } catch (error) {
     if (error instanceof Error) {
       core.setFailed(error.message);

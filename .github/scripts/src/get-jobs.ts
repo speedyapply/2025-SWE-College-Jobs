@@ -124,10 +124,6 @@ async function main() {
         company_type: "other",
       });
 
-      faangJobs.sort((a, b) => a.age - b.age);
-      quantJobs.sort((a, b) => a.age - b.age);
-      jobs.sort((a, b) => a.age - b.age);
-
       const tables = {
         faang: generateMarkdownTable(faangJobs, table.salary, table.interval),
         quant: generateMarkdownTable(quantJobs, table.salary, table.interval),

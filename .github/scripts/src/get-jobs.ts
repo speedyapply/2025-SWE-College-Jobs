@@ -89,7 +89,7 @@ async function updateCounts(filePath: string) {
   const jobCounts = await fetchJobCounts();
 
   readmeContent = readmeContent.replace(
-    /(\[Internships :books:\]\(#intern-usa\))(\s+-\s+\*\*\d+\*\* available)?/,
+    /(\[Internships :books:\]\(\/\))(\s+-\s+\*\*\d+\*\*\s+available)/,
     `$1 - **${jobCounts.intern_usa_count}** available`
   );
   readmeContent = readmeContent.replace(

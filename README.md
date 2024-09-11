@@ -10,7 +10,7 @@ This repository is a comprehensive list of Software Engineering jobs for college
 - [Internships :books:](/INTERN_INTL.md) - **286** available ([FAANG+](/INTERN_INTL.md#faang), [Quant](/INTERN_INTL.md#quant), [Other](/INTERN_INTL.md#other))
 - [New Graduate :mortar_board:](/NEW_GRAD_INTL.md) - **459** available ([FAANG+](/NEW_GRAD_INTL.md#faang), [Quant](/NEW_GRAD_INTL.md#quant), [Other](/NEW_GRAD_INTL.md#other))
 
-:raised_hands: Interested in contributing? Open an issue to get started. :raised_hands:
+:raised_hands: Looking for a **Artificial Intelligence** job? [Check out our AI/ML college jobs list.](https://github.com/speedyapply/2025-AI-College-Jobs) :raised_hands:
 
 _Built using [**JobSpy**](https://github.com/Bunsly/JobSpy) by Bunsly._
 

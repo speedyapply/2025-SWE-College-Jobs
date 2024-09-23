@@ -14,18 +14,20 @@ function parseIssueBody(issueBody: string) {
     return data === "_No response_" || data === "None" ? null : data;
   };
 
-  const jobTitleRegex = /### Position Title\s*\n\n(.+?)\n\n###/s;
-  const jobUrlRegex = /### Position Application Link\s*\n\n(.+?)\n\n###/s;
-  const companyNameRegex = /### Company Name\s*\n\n(.+?)\n\n###/s;
-  const companyUrlRegex = /### Company Link\s*\n\n(.+?)\n\n###/s;
-  const locationRegex = /### Location\s*\n\n(.+?)\n\n###/s;
+  const jobTitleRegex = /### Position Title\r?\n\r?\n(.+?)\r?\n\r?\n###/s;
+  const jobUrlRegex =
+    /### Position Application Link\r?\n\r?\n(.+?)\r?\n\r?\n###/s;
+  const companyNameRegex = /### Company Name\r?\n\r?\n(.+?)\r?\n\r?\n###/s;
+  const companyUrlRegex = /### Company Link\r?\n\r?\n(.+?)\r?\n\r?\n###/s;
+  const locationRegex = /### Location\r?\n\r?\n(.+?)\r?\n\r?\n###/s;
   const typeRegex =
-    /### Is this a new grad position or an internship\?\s*\n\n(.+?)\n\n###/s;
+    /### Is this a new grad position or an internship\?\r?\n\r?\n(.+?)\r?\n\r?\n###/s;
   const usaRegex =
-    /### Is this position based in the USA\?\s*\n\n(.+?)\n\n###/s;
+    /### Is this position based in the USA\?\r?\n\r?\n(.+?)\r?\n\r?\n###/s;
   const statusRegex =
-    /### Is this position accepting applications\?\s*\n\n(.+?)\n\n###/s;
-  const githubEmailRegex = /### Your GitHub Email\s*\n\n(.+?)(\n\n###|$)/s;
+    /### Is this position accepting applications\?\r?\n\r?\n(.+?)\r?\n\r?\n###/s;
+  const githubEmailRegex =
+    /### Your GitHub Email\r?\n\r?\n(.+?)(\r?\n\r?\n###|$)/s;
 
   const jobTitle = extractData(jobTitleRegex, issueBody);
   const jobUrl = extractData(jobUrlRegex, issueBody);

@@ -1,12 +1,12 @@
 ## 2025 International SWE Internships :books::globe_with_meridians:
 
 ### USA Positions :eagle:
-- [Internships :books:](/) - **478** available ([FAANG+](/#faang), [Quant](/#quant), [Other](/#other))
+- [Internships :books:](/) - **477** available ([FAANG+](/#faang), [Quant](/#quant), [Other](/#other))
 - [New Graduate :mortar_board:](/NEW_GRAD_USA.md) - **291** available ([FAANG+](/NEW_GRAD_USA.md#faang), [Quant](/NEW_GRAD_USA.md#quant), [Other](/NEW_GRAD_USA.md#other))
 
 ### International Positions :globe_with_meridians:
 - [Internships :books:](/INTERN_INTL.md) - **297** available ([FAANG+](#faang), [Quant](#quant), [Other](#other))
-- [New Graduate :mortar_board:](/NEW_GRAD_INTL.md) - **432** available ([FAANG+](/NEW_GRAD_INTL.md#faang), [Quant](/NEW_GRAD_INTL.md#quant), [Other](/NEW_GRAD_INTL.md#other))
+- [New Graduate :mortar_board:](/NEW_GRAD_INTL.md) - **421** available ([FAANG+](/NEW_GRAD_INTL.md#faang), [Quant](/NEW_GRAD_INTL.md#quant), [Other](/NEW_GRAD_INTL.md#other))
 
 [:arrow_down_small:End of List](#bottom)
 <a name="top"></a>

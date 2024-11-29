@@ -10,11 +10,25 @@ This repository is a comprehensive list of Software Engineering jobs for college
 - [Internships :books:](/INTERN_INTL.md) - **390** available ([FAANG+](/INTERN_INTL.md#faang), [Quant](/INTERN_INTL.md#quant), [Other](/INTERN_INTL.md#other))
 - [New Graduate :mortar_board:](/NEW_GRAD_INTL.md) - **434** available ([FAANG+](/NEW_GRAD_INTL.md#faang), [Quant](/NEW_GRAD_INTL.md#quant), [Other](/NEW_GRAD_INTL.md#other))
 
+<br/>
+<div align="center">
+  <a href="https://speedyapply.com">
+    <img src="https://speedyapply-web-app.vercel.app/api/chart" width="800" alt="Software Engineering College Job Market">
+  </a>
+</div>
+<div align="center">
+  <a href="https://discord.gg/gaJnCmTHuN">
+    <img src="https://github.com/user-attachments/assets/1547dbd1-89d9-4f14-8feb-70cab53b1335" width="132" alt="SpeedyApply Discord Server">
+  </a>
+  <a href="https://chromewebstore.google.com/detail/speedyapply-job-applicati/mbgjopdedgonlbpikjfibkccpmhjbnag">
+    <img src="https://github.com/user-attachments/assets/e8ad0070-9f04-4b1c-9291-a268775aab69" width="132" alt="SpeedyApply Chrome Web Store">
+  </a>
+</div>
+<br/>
+
 :raised_hands: Looking for an **Artificial Intelligence** job? [Check out our AI/ML college jobs list.](https://github.com/speedyapply/2025-AI-College-Jobs) :raised_hands:
 
 _Built using [**JobSpy**](https://github.com/Bunsly/JobSpy) by Bunsly._
-
-_Looking to save time on job applications? Try out the [**SpeedyApply: Job Application Autofill Tool**](https://chrome.google.com/webstore/detail/speedyapply-job-applicati/mbgjopdedgonlbpikjfibkccpmhjbnag) Chrome extension._
 
 <a name="intern-usa"></a>
 ## 2025 USA SWE Internships :books::eagle:

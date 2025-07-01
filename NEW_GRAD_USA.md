@@ -1,7 +1,7 @@
 ## 2025 USA SWE New Graduate Positions :mortar_board::eagle:
 
 ### USA Positions :eagle:
-- [Internships :books:](/) - **86** available ([FAANG+](/#faang), [Quant](/#quant), [Other](/#other))
+- [Internships :books:](/) - **87** available ([FAANG+](/#faang), [Quant](/#quant), [Other](/#other))
 - [New Graduate :mortar_board:](/NEW_GRAD_USA.md) - **227** available ([FAANG+](#faang), [Quant](#quant), [Other](#other))
 
 ### International Positions :globe_with_meridians:

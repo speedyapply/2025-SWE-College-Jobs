@@ -1,4 +1,4 @@
-# 2025 Software Engineering Internship & New Grad Positions
+# 2026 Software Engineering Internship & New Grad Positions
 
 This repository is a comprehensive list of Software Engineering jobs for college students in search of **internships** or **new graduate** positions. The positions are updated daily, and we prioritize jobs posted within the last 120 days.
 
@@ -26,10 +26,10 @@ This repository is a comprehensive list of Software Engineering jobs for college
 </div>
 <br/>
 
-:raised_hands: Looking for an **Artificial Intelligence** job? [Check out our AI/ML college jobs list.](https://github.com/speedyapply/2025-AI-College-Jobs) :raised_hands:
+:raised_hands: Looking for an **Artificial Intelligence** job? [Check out our AI/ML college jobs list.](https://github.com/speedyapply/2026-AI-College-Jobs) :raised_hands:
 
 <a name="intern-usa"></a>
-## 2025 USA SWE Internships :books::eagle:
+## 2026 USA SWE Internships :books::eagle:
 
 [:arrow_down_small:End of List](#bottom)
 <a name="top"></a>

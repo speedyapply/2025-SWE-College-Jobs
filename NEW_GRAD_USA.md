@@ -1,4 +1,4 @@
-## 2025 USA SWE New Graduate Positions :mortar_board::eagle:
+## 2026 USA SWE New Graduate Positions :mortar_board::eagle:
 
 ### USA Positions :eagle:
 - [Internships :books:](/) - **74** available ([FAANG+](/#faang), [Quant](/#quant), [Other](/#other))
